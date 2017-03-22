@@ -1,0 +1,436 @@
+
+@import fonts.sass
+@import vars.sass
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	font-family: "OpenSansRegular", sans-serif
+	overflow-x: hidden
+	color: #222
+
+	h1, h2, h3, h4, h5, h6
+		font-family: "OpenSansLight", sans-serif
+		font-family: em(43)
+		font-weight: normal
+
+	h1
+		font-size: em(41)
+		line-height: 1.2
+
+.ishome
+	h1
+		margin-top: 0
+
+	h2
+		font-size: em(32px)
+
+	h3, h4
+		font-family: "Open Sans Semibold", sans-serif
+		text-transform: uppercase
+		font-size: em(15px)
+
+a
+	color: $accent
+	outline: none !important
+
+.text-center
+	text-align: center
+
+.hidden
+	display: none
+
+b, strong
+	font-family: "OpenSansSemiBold", sans-serif
+	font-weight: normal
+
+.main-head 
+	background-image: url(../img/bg_top.jpg)
+	min-height: 100vh
+	background-size: cover
+	background-position: top center
+	min-height: 100vh
+
+.mnu-line
+	padding-top: 48px
+
+.logo
+	display: block
+	width: 100px
+	img
+		width: 100%
+
+nav,
+.header-content
+	ul
+		list-style-type: none
+		padding: 0px 25px
+		margin: 0
+	li
+		display: inline-block
+
+	> ul
+		> li
+			> a
+				display: block
+				padding: 12px 16px
+				color: #728292
+				+mt(.5s)
+				&:hover
+					color: #45596C
+					transform: scale(1.1)
+					+mt(.1s)
+			&.active
+				a
+					color: #45596C
+					text-decoration: underline
+					&:hover
+						text-decoration: none
+						border-color: transparent
+.phone
+	text-align: right
+	.phone-wrap
+		color: #45596C
+		font-family: "Exo2Bold", sans-serif
+		font-size: em(19px)
+		.fa
+			font-size: em(19px)
+			top: 2px
+			margin-right: 4px
+	.callback
+		font-size: em(12px)
+		vertical-align: top
+		line-height: min(5px)
+		color: #5A6C7E
+		margin-right: 6px
+		border-bottom: 1px dashed #5A6C7E
+		display: inline-block
+		line-height: em(17px)
+		+mt(.5s)
+		&:hover
+			text-decoration: none
+			border-color: transparent
+			transform: scale(1.1)
+			+mt(.1s)
+
+.header-content
+	padding: 10% 0 5%
+	.button
+		margin-top: 50px
+	.responsive-img
+		width: auto
+		padding: 6% 0
+
+
+ul.home-list
+	margin-top: 40px
+	text-align: left
+	list-style-type: none
+	padding: 0
+	margin: 0
+	li
+		display: block
+		color: #45596C
+		text-transform: uppercase
+		font-family: "Open Sans Semibold", sans-serif
+		font-size: em(17px)
+		line-height: 1.6
+
+
+.button
+	display: inline-block
+	border: none
+	background-color: $btn
+	color: #fff
+	font-size: em(14px)
+	letter-spacing: 2px
+	text-transform: uppercase
+	padding: 13px 34px
+	border-radius: 3px
+	box-shadow: 0 3px 0 #0B9546
+	transition: all .15s ease
+	text-align: center
+	&:hover, &:focus
+		color: #fff
+		text-decoration: none
+	&:hover
+		background-color: #18ce66
+	&:active
+		background-color: #0B9546
+		transform: translateY(3px)
+
+.button-small
+	padding: 9px 28px
+	font-size: em(13px)
+	background-color: $accent
+	box-shadow: 0px 4px 0px darken($accent, 6%)
+	&:hover
+		background-color: lighten($accent, 8%)
+		box-shadow: 0px 4px 0px darken($accent, 3%)
+	&:active, &:focus
+		background-color: darken($accent, 6%)
+		box-shadow: 0px 4px 0px darken($accent, 6%)
+
+.button-gray
+	background: #E8E8E8
+	color: #666
+	box-shadow: 0px 4px 0px darken(#E8E8E8, 6%)
+
+.button-accent
+	background-color: transparent
+	border: $accent 1px solid
+	box-shadow: 0 3px 0 darken($accent, 6%)
+	color: $accent
+	font-family: "Open Sans Semibold", sans-serif
+	&:hover
+		background-color: $accent
+	&:active, &:focus
+		background-color: darken($accent, 6%)
+
+
+
+
+.responsive-img
+	max-width: 100%
+
+	//mouse will icon
+.mouse-icon
+	border: 2px solid $blue
+	border-radius: 16px
+	height: 40px
+	width: 24px
+	z-index: 10
+	opacity: 0.7
+	display: inline-block
+	cursor: pointer
+
+	.wheel
+		animation-name: drop
+		animation-duration: 1s
+		animation-timing-function: linear
+		animation-delay: 0s
+		animation-iteration-count: infinite
+		animation-play-state: running
+		position: relative
+		border-radius: 10px
+		background: $blue
+		width: 2px
+		height: 6px
+		top: 4px
+		margin-left: auto
+		margin-right: auto
+
+@-webkit-keyframes drop
+	0%
+		top: 5px
+		opacity: 0
+
+	30%
+		top: 10px
+		opacity: 1
+
+	100%
+		top: 25px
+		opacity: 0
+
+.toggle-mnu
+	position: absolute
+	top: 0
+	right: 15px
+
+
+@keyframes drop
+	0%
+		top: 5px
+		opacity: 0
+
+	30%
+		top: 10px
+		opacity: 1
+
+	100%
+		top: 25px
+		opacity: 0
+
+.mw-wrapper
+	text-align: center
+	padding: 40px 0
+
+//Toggle Mnu
+
+.toggle-mnu
+	display: block
+	width: 28px
+	height: 28px
+	margin-top: 14px
+
+	span:after, span:before
+		content: ""
+		position: absolute
+		left: 0
+		top: 9px
+
+	span:after
+		top: 18px
+
+	span
+		position: relative
+		display: block
+
+	span, span:after, span:before
+		width: 100%
+		height: 2px
+		background-color: $blue
+		transition: all 0.3s
+		backface-visibility: hidden
+		border-radius: 2px
+
+	&.on span
+		background-color: transparent
+
+	&.on span:before
+		transform: rotate(45deg) translate(-1px, 0px)
+
+	&.on span:after
+		transform: rotate(-45deg) translate(6px, -7px)
+.toggle-mnu
+	position: absolute
+	top: 0
+	right: 15px
+
+.hidden-mnu
+	background-color: $blue
+	display: none
+	position: relative
+	top: 20px
+	li
+		display: block
+
+	> ul
+		padding: 20px 0
+		> li
+			&.active
+				a
+					text-decoration: underline
+					color: $accent
+			> a
+				&:hover
+					color: #fff
+					background-color: $accent
+					text-decoration: none
+
+.s-wide
+	padding: 80px 0
+	h2
+		text-align: center
+		margin-top: 0
+		line-height: 1.1875em
+
+.s-dark
+	background-color: $blue
+	color: #fff
+
+.s-adv
+	padding:  55px 0 15px
+.s-adv-item
+	font-size: em(15px)
+	font-family: "Open Sans Light", sans-serif
+	color: #b3c0cd
+	line-height: em(21px)
+	margin-bottom: 40px
+	h3
+		margin: 0
+		font-size: em(20px)
+		color: #dde9f3
+		font-family: "Exo2Bold", sans-serif
+		span
+			font-size: em(29px)
+			color: $accent
+	p
+		margin-top: 12px 0 0
+
+.table
+	display: table
+	width: 100%
+.tr
+	display: table-row
+.td
+	display: table-cell
+	vertical-align: middle
+
+.contact-form
+	padding: 32px 26px
+	background-color: darken($blue, 5%)
+	.button
+		margin-top: 25px
+	&-head
+		text-align: center
+		h4
+			font-size: em(18px)
+			margin-top: 0
+			margin-bottom: 10px
+		p
+			color: #fff
+			opacity: .6
+			font-size: em(14px)
+			margin-top: 0
+form
+	label
+		margin-bottom: 14px
+		display: block
+		span
+			font-size: 14px
+			color: #fff
+			opacity: .2
+			display: block
+			margin-bottom: 3px
+		input, select
+			background-color: rgba(255,255,255,.6)
+			border-radius: 2px
+			border: none
+			padding: 9px 15px 7px
+			display: block
+			width: 100%
+			color: #222
+			font-size: em(15px)
+			border-bottom: $blue 4px solid
+			transition: all .5s ease
+			&:focus
+				background-color: #fff
+		select
+			padding: 11px 15px
+			&:focus
+				background-color: #fff
+				border-bottom: lighten($blue, 10%) 4px solid
+			.option
+				padding: 8px 15px
+			.active
+				background-color: $blue
+				color: #fff
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

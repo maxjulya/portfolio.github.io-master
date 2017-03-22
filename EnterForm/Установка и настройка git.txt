@@ -1,0 +1,5 @@
+https://www.youtube.com/watch?v=xSlxXbiB7dg
+
+
+когда выскакивает оштбка   fatal: LF would be replaced by CRLF in bower.json
+ вводим  git config --global core.safecrlf false

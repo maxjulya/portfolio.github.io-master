@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font: normal 12px Arial,Helvetica,sans-sarif;
+  background: #222;
+  color: #888;
+}
+
+.wrapper {
+  max-width: 620px;
+  padding: 0 20px 0 20px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  font-weight: normal;
+  padding: 20px;
+  border-bottom: 1px dotted #444;
+  background: #1e1e1e;
+}
+
+.new {
+  color: #ff9900;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+/* CUSTOM SELECT BOX */
+.selectBox {
+  width: 280px;
+  position: absolute;
+  top: 280px;
+  left: 80px;
+  font-size: 17px;
+}
+
+.selected, .selectArrow, .selectOptions span {
+  cursor: pointer;
+}
+
+.selected {
+  padding: 13px 15px;
+  float: left;
+  width: 206px;
+}
+
+.selectArrow {
+  float: right;
+  background: #1B1B1B;
+  width: 40px;
+  height: 46px;
+  position: relative;
+}
+
+.selectArrow:after {
+  content: '▼';
+  position: absolute;
+  width: 37px;
+  color: #999;
+  font-weight: bold;
+  font-size: 16px;
+  left: 12px;
+  top: 14px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.selectArrow:active {
+  background-position: 6px 16px;
+}
+
+.selectBoxTop {
+  background: #111;
+  border-radius: 3px;
+  height: 46px;
+  border: 1px solid #000;
+  position: relative;
+  z-index: 3;
+}
+
+.selectOptions {
+  position: absolute;
+  background: #131313;
+  border: 1px solid #000;
+  left: 0;
+  top: 46px;
+  width: 278px;
+  display: none;
+}
+
+.selectOptions span {
+  display: block;
+  padding: 13px 15px;
+}
+
+.selectOptions span:hover {
+  background: #000;
+  color: #fff;
+  border-radius: 3px;
+}
+
+label {
+  color: #000;
+}

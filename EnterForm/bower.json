@@ -1,0 +1,7 @@
+{
+  "name": "homework4_git",
+  "dependencies": {
+    "jquery": "1.11",
+    "normalize-css": "normalize.css#^5.0.0"
+  }
+}

@@ -1,0 +1,305 @@
+/* --------------- reset.css --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, menu, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0; /* обнуляем отступы и убираем бордюры */
+    vertical-align: baseline; /* приводим все к одной базовой линии */
+    background: transparent; /* чтобы не проскакивали левые фоны, установленные по умолчанию */
+    font-size: 100%; /* размер шрифта всем одинаковый */
+
+}
+
+@font-face {
+    font-family: 'Helvetica Neue Regular';
+    src: url('../fonts/helveticaneue-thin-webfont.eot');
+    src: url('../fonts/helveticaneue-thin-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/helveticaneue-thin-webfont.woff2') format('woff2'),
+    url('../fonts/helveticaneue-thin-webfont.woff') format('woff'),
+    url('../fonts/helveticaneue-thin-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+.background  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background: url('../img/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+
+}
+
+.top_panel {
+    background: url(../img/panel.png);
+    height: 36px;
+
+}
+ul {
+    float: right;
+    padding-right: 21px;
+}
+
+.top_panel li {
+    display: inline-block;
+    list-style: none;
+}
+
+.top_panel span {
+    text-decoration: underline;
+}
+
+.right {
+    position: relative;
+}
+.right img {
+    position: absolute;
+    top: -7px;
+    right: 0;
+}
+
+.flag {
+    position: relative;
+}
+
+.top_panel .flag a {
+    color: #FEFEFE;
+    padding-left: 39px;
+}
+
+.flag img {
+    position: absolute;
+    top: -5px;
+    left: 7px;
+
+}
+
+.flag a:hover {
+    text-decoration: underline;
+    background: url(../img/panel.png);
+
+}
+
+.top_panel li>a {
+    display: block;
+    color: #60b5ed;;
+    text-decoration: none;
+    font-family: "helvetica neue regular", "Tahoma", sans-serif;
+    padding: 11px 14px;
+    box-sizing: border-box ;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+}
+
+.top_panel a:hover {
+    background-color: #00ADDD;
+    display: block;
+    box-sizing: border-box;
+    color: #FFF;
+    font-weight: 500;
+}
+
+.flag a:hover {
+    text-decoration: underline;
+}
+
+.top_panel img {
+    display: inline-block;
+    padding-top: 10px;
+}
+
+.right_li a {
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+}
+
+.right_li a:hover {
+    display: block;
+    background-image: url(../img/right_bg.png);
+    border: 1px solid #0F7095;
+    border-bottom: none;
+    border-top: none;
+    box-sizing: border-box;
+    color: #feffff;
+}
+
+.right_li a {
+    color: #feffff;
+}
+.first_blok {
+    clear: both;
+    margin: 0 auto;
+    text-align: center;
+    width: 560px;
+    background-color: rgba(0,0,0,0.65);
+}
+
+
+.form {
+    position: absolute;
+    width: 560px;
+    height: 615px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.Cad h1 {
+    font-family: "helvetica neue regular","Tahoma", sans-serif;
+    font-weight: 600;
+    padding: 20px;
+    font-size: 24px;
+    background-color: rgba(0,0,0,0.65);
+
+}
+
+.form_frame {
+    margin-top: 2px;
+    background-color: rgba(0,0,0,0.65);
+    padding-bottom: 20px;
+}
+
+.butt_main {
+    position: relative;
+    margin-top: 35px;
+    width: 276px;
+    height: 35px;
+    border: none;
+
+}
+
+.butt_main:hover {
+   opacity:0.8;;
+   cursor: pointer;
+}
+
+.butt_main img {
+    position: absolute;
+    background-color: rgba(0,0,0,0.65);
+    top: 0;
+    left: 0;
+}
+
+
+.ou {
+    position: relative;
+    margin: 30px;
+    color: #999999;
+    font-size: 14px;
+}
+
+h1 {
+    color: white;
+    font-family: Tahoma sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.Layer3 {
+    width: 276px;
+    height: 35px;
+}
+
+.form label input:hover {
+    width: 276px;
+    height: 35px;
+    background-image: linear-gradient(to top, #1b5288 0%, #1b5288 100%);
+    box-shadow: 0 1px 0 #4b4b4b, inset 0 2px 5px rgba(29, 26, 22, 0.2), 0 0 9px rgba(47, 123, 197, 0.77), inset 0 0 2px rgba(0, 0, 0, 0.1);
+
+
+}
+
+.ou::before {
+    content: '';
+    width: 120px;
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #000;
+    position: absolute;
+    top: 8px;
+    left: 113px;
+
+}
+
+.ou:after {
+    content: '';
+    width: 120px;
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #000;
+    position: absolute;
+    top: 8px;
+    left: 268px;
+}
+
+
+.form label input {
+    display: block;
+    margin: 0 auto;
+    border: none;
+    margin-bottom: 17px;
+    width: 276px;
+    height: 35px;
+    color: #cccccc;
+    text-indent: 17px;
+    background-color: #080707;
+    box-shadow: 0 1px 0 rgb(75, 75, 75), inset 0 2px 5px rgba(29, 26, 22, 0.2), 0 0 9px rgba(47, 123, 197, 0.77), inset 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+.checkbox  {
+    margin: 0 auto;
+    position: relative;
+    width: 276px;
+    height: 35px;
+    font-family: Tahoma sans-serif;;
+    display: block;
+}
+
+.checkbox input {
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    top: 6px;
+    left: -5px;
+    padding-top: 15px;
+}
+
+.checkbox span {
+    position: absolute;
+    left: 24px;
+    top: 6px;
+    color: #ccc;
+}
+
+.text-center {
+    padding-top: 13px;
+}
+
+.button_bott {
+    width: 151px;
+    height: 37px;
+    border-radius: 5px;
+    background-image: url(../img/Button.png);
+    color: #fff;
+    border: none;
+    margin-bottom: 16px;
+}
+
+.button_bott:hover {
+  opacity: 0.8;
+    cursor: pointer;
+}
+
+.bott_text span {
+    color: #ccc;
+    font-family: Tahoma, sans-serif ;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 16px;
+
+}
+
